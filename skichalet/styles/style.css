@@ -1,0 +1,448 @@
+.container{
+  height: calc(100vh - 600px);
+}
+body{
+  background-color: #2e3740;
+}
+header{
+  background-color: #2E3740;
+  text-align: center;
+}
+header img{
+  max-width: 100%;
+}
+a, h1, h2{
+  font-family: helvetica;
+}
+p{
+  font-family: arial;
+}
+h1{
+  text-align: center;
+  color: #ffffff;
+}
+h2{
+  text-align: center;
+  font-weight: lighter;
+}
+#skip_top li a{
+  display: block;
+  position:fixed;
+  z-index: 9999;
+  right: 3px;
+  top: 80%;
+  text-decoration: none;
+  font-size: 28px;
+  color: crimson;
+  background-color: #2E3740;
+  padding: 4px 15px 8px 15px;
+  border-radius: 25px;
+  border: 2px solid crimson;
+}
+#skip_top li{
+  padding: 0;
+  list-style-type: none;
+}
+.home_main_grid, .contact_main_grid, .town_main_grid, .ski_main_grid, .acc_main_grid{
+  display: grid;
+  grid-column-gap: 30px;
+  background-color: #2E3740;
+  margin: 0 10px 0 10px;
+}
+
+/* START SITE NAVIGATION ********************/
+
+.nav_flex,#skip_content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.nav_flex li,#skip_content li{
+  list-style-type: none;
+  background-color: #2e3740;
+  flex-grow: 1;
+}
+.nav_flex li:hover,#skip_content li:hover{
+  background-color: #5C6D7F;
+  box-shadow: -1px -1px 2px #2e3740;
+}
+.nav_flex li a,#skip_content li a{
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 25px 5px 25px;
+  text-align: center;
+}
+.nav_flex li a:link,#skip_content li a:link{
+  color: #ffffff;
+}
+.nav_flex li a:visited,#skip_content li a:visited{
+  color: #ffffff;
+}
+.nav_flex li a:hover,#skip_content li a:hover{
+  color: #ffffff;
+  /* text-shadow: 2px 2px 1px #2e3740; */
+}
+#skip_content li{
+background-color: crimson;
+}
+#skipNav{
+  position: relative;
+}
+/* END SITE NAVIGATION ********************/
+
+/* START HOME PAGE MAIN CONTENT ********************/
+
+.home_main_grid{
+  grid-template-columns: repeat(1,1fr);
+  grid-template-areas:
+  "h1_hd"
+  "home_div1"
+  "home_div2"
+  "home_div3";
+}
+.grid_box{
+  font-size: 24px;
+  text-align: justify;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0 0;
+  margin: 10px 0 10px 0;
+}
+.grid_box img{
+  border-radius: 20px 20px 0 0;
+}
+.grid_box p{
+  padding: 10px 30px 10px 30px;
+}
+.img_max{
+  max-width: 100%;
+}
+.h1_header{
+  grid-area: h1_hd;
+}
+.home_div_1{
+  grid-area: home_div1;
+}
+.home_div_2{
+  grid-area: home_div2;
+}
+.home_div_3{
+  grid-area: home_div3;
+}
+
+/* END HOME PAGE MAIN CONTENT ********************/
+
+/* START CONTACT PAGE MAIN CONTENT ********************/
+
+.contact_main_grid{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas:
+    "h1_hd"
+    "contact_div1"
+    "contact_div2";
+}
+.contact_div1{
+  grid-area: contact_div1;
+}
+.contact_div2{
+  grid-area: contact_div2;
+  text-align: center;
+}
+form,.contact_div2{
+  padding: 10px;
+  font-family: helvetica;
+}
+.formInputs input, textarea,select{
+  width: 90%;
+}
+#contactForm{
+  color: #000000;
+  margin-bottom: 16px;
+}
+#contactForm td input,textarea,select{
+  border-radius: 5px;
+}
+.formButton{
+  margin: 10px 10px 0 0;
+  height:40px;
+  width: 140px;
+}
+.formButton:hover{
+  filter: drop-shadow(0px 1px 1px  black);
+}
+.mapWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+.mapWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* END CONTACT MAIN CONTENT********************/
+
+/* START TOWN MAIN CONTENT********************/
+
+.town_main_grid{
+  grid-template-columns: repeat(1,1fr);
+  grid-template-areas:
+  "h1_hd"
+  "town_div1"
+  "town_div2"
+  "town_div3"
+  "town_div4"
+  "town_div5"
+  "town_div6"
+  "town_div7";
+}
+.town_div1{
+  grid-area: town_div1;
+}
+.town_div2{
+  grid-area: town_div2;
+}
+.town_div3{
+  grid-area: town_div3;
+}
+.town_div4{
+  grid-area: town_div4;
+}
+.town_div5{
+  grid-area: town_div5;
+}
+.town_div6{
+  grid-area: town_div6;
+}
+.town_div7{
+  grid-area: town_div7;
+}
+/* END TOWN MAIN CONTENT********************/
+
+/* START SKI RENTAL PAGE MAIN CONTENT ********************/
+
+.ski_main_grid{
+  grid-template-columns: repeat(1,1fr);
+  grid-template-areas:
+  "h1_hd"
+  "s_d1"
+  "s_d2"
+  "s_d3"
+  "s_d4"
+  "s_d5"
+  "s_d6"
+  "s_d7"
+  "s_d8";
+}
+.s_d1{
+  grid-area: s_d1;
+}
+.s_d2{
+  grid-area: s_d2;
+}
+.s_d3{
+  grid-area: s_d3;
+}
+.s_d4{
+  grid-area: s_d4;
+}
+.s_d5{
+  grid-area: s_d5;
+}
+.s_d6{
+  grid-area: s_d6;
+}
+.s_d7{
+  grid-area: s_d7;
+}
+.s_d8{
+  grid-area: s_d8;
+}
+figure img{
+  max-width: 100%;
+}
+figure{
+ text-align: center;
+}
+figcaption{
+background-color: crimson;
+}
+
+/* END SKI RENTAL PAGE MAIN CONTENT ********************/
+
+/* START FOOTER ********************/
+
+.foot_nav{
+  grid-area: ft_nv;
+}
+.foot_terms{
+  grid-area: ft_ts;
+}
+.foot_contact{
+  grid-area: ft_ct;
+}
+.foot_social{
+  grid-area: ft_sl;
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+  "ft_sl ft_sl"
+  "ft_ct ft_ct"
+  "ft_nv ft_nv"
+  "ft_ts ft_ts";
+  margin: 0 10px 0 10px;
+  color: #ffffff;
+  padding: 60px 0 60px 0;
+  background: linear-gradient(#2E3740, #5C6D7F);
+  text-align: center;
+}
+.foot_nav ul li{
+  list-style-type: none;
+}
+.foot_nav ul li a,.foot_terms ul li a{
+  color: #ffffff;
+}
+.foot_terms ul li{
+  list-style-type: none;
+}
+.foot_nav ul li a:hover,.foot_terms ul li a:hover{
+  color: lightgrey;
+}
+a[href^="tel:"]:before {
+  content: "\260e";
+  margin-right: 8px;
+}
+
+/* END FOOTER ********************/
+
+/* MEDIA QUERIES ********************/
+
+/* START MEDIA QUERIES MIN 750PX ********************/
+
+@media screen and (min-width:750px){
+  .nav_flex{
+    flex-direction: row;
+  }
+  .nav_flex li{
+    padding: 15px 0 15px 0;
+  }
+  nav{
+    position: sticky;
+    top: 0;
+  }
+  .footer{
+    z-index: -1;
+    position: sticky;
+    bottom: 0px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    "ft_nv ft_ts ft_sl ft_ct";
+    grid-column-gap: 10px;
+  }
+  .contact_main_grid{
+      grid-template-columns: repeat(4,1fr);
+      grid-template-areas:
+      "h1_hd h1_hd h1_hd h1_hd"
+      "contact_div1 contact_div1 contact_div2 contact_div2";
+  }
+  #skip_content{
+    display: none;
+  }
+  #skip_top{
+    display: none;
+  }
+  .town_main_grid{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "h1_hd h1_hd"
+    "town_div1 town_div2"
+    "town_div3 town_div4"
+    "town_div5 town_div6"
+    "town_div7 town_div7";
+  }
+  .ski_main_grid{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "h1_hd h1_hd"
+    "s_d1 s_d2"
+    "s_d3 s_d4"
+    "s_d5 s_d6"
+    "s_d7 s_d8";
+  }
+}
+
+/* END MEDIA QUERIES MIN 750PX ********************/
+
+/* START MEDIA QUERIES MIN 1050PX ********************/
+
+@media screen and (min-width:1050px){
+  .home_main_grid{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "h1_hd h1_hd"
+    "home_div1 home_div1"
+    "home_div2 home_div3"
+    "home_div2 home_div3";
+  }
+  .nav_flex li a{
+    font-size: 32px;
+  }
+  .ski_main_grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "h1_hd h1_hd h1_hd"
+    "s_d1 s_d2 s_d3"
+    "s_d4 s_d5 s_d6"
+    "s_d7 s_d8 .";
+  }
+}
+
+/* END MEDIA QUERIES MIN 1050PX ********************/
+
+/* START MEDIA QUERIES MIN 1500PX ********************/
+
+@media screen and (min-width:1500px){
+  .home_main_grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-template-areas:
+    "h1_hd h1_hd h1_hd"
+    "home_div1 home_div2 home_div3";
+  }
+  .grid_box{
+    margin-bottom: 0;
+  }
+  .town_main_grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "h1_hd h1_hd h1_hd"
+    "town_div1 town_div2 town_div3"
+    "town_div4 town_div5 town_div6"
+    "town_div4 town_div7 town_div7";
+    ;
+  }
+  .ski_main_grid{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    "h1_hd h1_hd h1_hd h1_hd"
+    "s_d1 s_d2 s_d3 s_d4"
+    "s_d5 s_d6 s_d7 s_d8";
+  }
+}
+/* END MEDIA QUERIES MIN 1500PX ********************/
+
+/* START MEDIA QUERIES MIN 2000PX ********************/
+
+@media screen and (min-width:2000px){
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* END MEDIA QUERIES MIN 2000PX ********************/

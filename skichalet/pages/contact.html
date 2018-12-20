@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <link href="../styles/normalize.css" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Ski Chalet - Contact Page</title>
+  </head>
+    <body>
+    <div class="container">
+      <nav id="skipNav">
+        <ul id="skip_content">
+          <li>
+            <a href="#main_content" style="font-size:16px;">SKIP TO CONTENT</a>
+          </li>
+        </ul>
+      </nav>
+      <nav id="skipTop">
+        <ul id="skip_top">
+          <li>
+            <a href="#skipNav">&uarr;</a>
+          </li>
+        </ul>
+      </nav>
+    <header>
+      <nav>
+        <ul class="nav_flex">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="accomadation.html">ACCOMODATION</a></li>
+          <li><a href="town.html">TOWN</a></li>
+          <li><a href="ski.html">SKI RENTAL</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="imgHeader">
+        <picture>
+          <source srcset="../images/head_small.jpg"
+          media="(max-width: 480px)">
+          <source srcset="../images/head_medium.jpg"
+          media="(max-width: 1070px)">
+          <img src="../images/head_large.jpg" alt="image of the Alpine ski chalet covered with snow"/>
+        </picture>
+      </div>
+    </header>
+    <!--START OF MAIN CONTENT ********************-->
+    <main class="contact_main_grid" id="main_content">
+      <h1 class="h1_header">Contact us</h1>
+      <section class="contact_div1 grid_box grid_box1">
+        <h2>Contact Form</h2>
+        <form action="#" method="post"  id="contactForm">
+          <table>
+            <tr>
+              <td><label for="name">Name: </label></td>
+              <td class="formInputs"><input type="text" name="name" id="name" value="" /></td>
+            </tr>
+            <tr>
+              <td><label for="email">E-mail: </label></td>
+              <td class="formInputs"><input type="text" name="email" id="email" value="" /></td>
+            </tr>
+            <tr>
+              <td><label for="subject">Subject:</label></td>
+              <td>
+                <select name="subject" id="subject">
+                  <option value="" disabled selected="selected">Select option</option>
+                  <option value="Bookings">Bookings</option>
+                  <option value="Enquires">Enquires</option>
+                  <option value="Accomodation">Accomodation</option>
+                  <option value="Ski_Hire">Ski Hire</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td style="vertical-align:top;"><label for="comments">Comments: </label></td>
+              <td class="formInputs"><textarea name="comments" id="comments" rows="10"></textarea></td>
+            </tr>
+            <tr>
+              <td><input type="reset" class="formButton"></td>
+              <td><input type="submit" name="submit" id="submit" value="Send" class="formButton"/></td>
+            </tr>
+          </table>
+        </form>
+      </section>
+      <section class="contact_div2 grid_box">
+        <h2>Contact Details</h2>
+          <address>
+            Alpine ski chalet<br>
+            06420<br>
+            ISOLA <br>
+            France<br><br>
+          </address>
+        <p>
+          <a href="#">alskichalet@skimorzine.com</a><br><br>
+          <a href="tel:33(0)491222222" style="color:#000000">+33(0)491 222222</a>
+        </p>
+      </section>
+    </main>
+    <!--END OF MAIN CONTENT ********************-->
+    <footer class="footer">
+        <div class="foot_contact">
+          <address>
+            Alpine ski chalet<br>
+            06420<br>
+            ISOLA <br>
+            France<br>
+          </address>
+          <a href="tel:33(0)491222222" style="color:#ffffff">+33 (0)4 91 22 22 22</a>
+          <br><br>
+        </div>
+        <div class="foot_social">
+          <a href="#"><img src="../images/socialMedia/facebook.png" alt="link to Alpine ski chalets facebook page"></a>
+          <a href="#"><img src="../images/socialMedia/twitter.png" alt="link to Alpine ski chalets twitter page"></a><br>
+          <a href="#"><img src="../images/socialMedia/instagram.png" alt="link to Alpine ski chalets instagram page"></a>
+          <a href="#"><img src="../images/socialMedia/vimeo.png" alt="link to Alpine ski chalets vimeo page"></a>
+          <br><br>
+        </div>
+        <nav class="foot_nav">
+          <ul class="nav_links">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="accomadation.html">ACCOMODATION</a></li>
+            <li><a href="town.html">TOWN</a></li>
+            <li><a href="ski.html">SKI RENTAL</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <br><br>
+        </nav>
+        <nav class="foot_terms">
+          <ul class="nav_links">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+          <br><br>
+        </nav>
+      </footer>
+    </div><!--close container div-->
+  </body>
+</html>
