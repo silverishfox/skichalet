@@ -1,6 +1,9 @@
 .container{
   height: calc(100vh - 600px);
 }
+#bookButton{
+  background-color: coral;
+}
 body{
   background-color: #2e3740;
 }
@@ -273,6 +276,52 @@ background-color: crimson;
 
 /* END SKI RENTAL PAGE MAIN CONTENT ********************/
 
+/* START ACCOMODATION PAGE MAIN CONTENT ********************/
+
+.acc_main_grid{
+  grid-template-columns: repeat(1,1fr);
+  grid-template-areas:
+  "h1_hd"
+  "a_d1"
+  "a_d2"
+  "a_d3"
+  "a_d4"
+  "a_d5"
+  "a_d6"
+  "a_d7"
+  "a_d8"
+  "a_d9";
+}
+.a_d1{
+  grid-area: a_d1;
+}
+.a_d2{
+  grid-area: a_d2;
+}
+.a_d3{
+  grid-area: a_d3;
+}
+.a_d4{
+  grid-area: a_d4;
+}
+.a_d5{
+  grid-area: a_d5;
+}
+.a_d6{
+  grid-area: a_d6;
+}
+.a_d7{
+  grid-area: a_d7;
+}
+.a_d8{
+  grid-area: a_d8;
+}
+.a_d9{
+  grid-area: a_d9;
+}
+
+/* END ACCOMODATION PAGE MAIN CONTENT ********************/
+
 /* START FOOTER ********************/
 
 .foot_nav{
@@ -321,6 +370,23 @@ a[href^="tel:"]:before {
 /* END FOOTER ********************/
 
 /* MEDIA QUERIES ********************/
+
+/* START MEDIA QUERIES MIN 600PX ********************/
+
+@media screen and (min-width:600px){
+  .acc_main_grid{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "h1_hd h1_hd"
+    "a_d1 a_d1"
+    "a_d2 a_d3"
+    "a_d4 a_d5"
+    "a_d6 a_d7"
+    "a_d8 a_d9";
+  }
+}
+
+/* END MEDIA QUERIES MIN 600PX ********************/
 
 /* START MEDIA QUERIES MIN 750PX ********************/
 
@@ -399,6 +465,14 @@ a[href^="tel:"]:before {
     "s_d1 s_d2 s_d3"
     "s_d4 s_d5 s_d6"
     "s_d7 s_d8 .";
+  }
+  .acc_main_grid{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    "h1_hd h1_hd h1_hd h1_hd"
+    "a_d1 a_d1 a_d1 a_d1"
+    "a_d2 a_d3 a_d4 a_d5"
+    "a_d6 a_d7 a_d8 a_d9";
   }
 }
 
